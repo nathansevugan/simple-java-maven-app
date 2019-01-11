@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'oviis/jenkins-maven-slave'
+            image 'jenkinsci/docker-slave'
             args '-v /root/.m2:/root/.m2'
         }
     }
