@@ -34,7 +34,7 @@ objects:
   spec:
     source:
       git:
-        uri: https://github.com/jenkins-docs/simple-java-maven-app.git
+        uri: https://github.com/nathansevugan/simple-java-maven-app.git
     strategy:
       jenkinsPipelineStrategy:
         jenkinsfilePath: ./jenkins/Jenkinsfile
