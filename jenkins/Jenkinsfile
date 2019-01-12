@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
 //            image 'jenkinsci/docker-slave'
-              label 'dockerserver'  // both label and image
+              label 'docker'  // both label and image
               image 'maven:3-alpine'
               args '-v /root/.m2:/root/.m2'
         }
