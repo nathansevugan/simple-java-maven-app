@@ -1,9 +1,9 @@
 pipeline {
     agent {
         docker {
-//            image 'jenkinsci/docker-slave'
-              label 'docker'  // both label and image
-              image 'maven:3-alpine'
+            image 'openshift/jenkins-agent-maven-35-centos7'
+//              label 'docker'  // both label and image
+//              image 'maven:3-alpine'
               args '-v /root/.m2:/root/.m2'
         }
     }
